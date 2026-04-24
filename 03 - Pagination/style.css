@@ -20,9 +20,29 @@ body {
 h1 {
     color: #fff;
     font-size: 2.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.conteudo h1 {
+    color: #764ba2;
+    text-shadow: none;
+}
+
+.conteudo p {
+    color: #555;
+    line-height: 1.7;
 }
 
 /* Container da paginação */
