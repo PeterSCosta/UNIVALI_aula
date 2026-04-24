@@ -1,0 +1,57 @@
+/* Página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Combinador descendente: ul dentro de .paginacao */
+.paginacao ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Classe nos itens */
+.paginacao-item a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #337ab7;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Combinador descendente: hover nos links dos itens */
+.paginacao-item a:hover {
+    background-color: #eee;
+    color: #23527c;
+}
+
+/* Classe modificadora para o item ativo */
+.paginacao-item.ativo a {
+    background-color: #337ab7;
+    color: #fff;
+    border-color: #337ab7;
+    font-weight: bold;
+}
+
+/* Combinador de irmão adjacente: separador entre itens */
+.paginacao-item + .paginacao-item {
+    margin-left: 2px;
+}
+
+/* Combinador filho direto: primeiro e último item com bordas diferentes */
+.paginacao-lista > .paginacao-item:first-child a,
+.paginacao-lista > .paginacao-item:last-child a {
+    font-weight: bold;
+    color: #555;
+}
