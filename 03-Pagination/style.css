@@ -7,37 +7,28 @@
 
 /* Página */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     min-height: 100vh;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-h1 {
-    color: #fff;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
 .conteudo {
     max-width: 600px;
-    background-color: #fff;
     padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .conteudo h1 {
-    color: #764ba2;
-    text-shadow: none;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 .conteudo p {
@@ -45,77 +36,49 @@ h1 {
     line-height: 1.7;
 }
 
-/* Container da paginação */
-.paginacao {
-    background-color: #fff;
-    padding: 20px 30px;
-    border-radius: 50px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Combinador descendente: ul dentro de .paginacao */
+/* Paginação */
 .paginacao ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px;
 }
 
-/* Classe nos itens */
+/* Classe nos itens — estilo base dos links */
 .paginacao-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 42px;
-    height: 42px;
-    padding: 0 12px;
-    background-color: #f5f5f7;
-    color: #555;
-    text-decoration: none;
-    border-radius: 50%;
-    font-weight: 500;
-    transition: all 0.2s ease;
-}
-
-/* Combinador descendente: hover nos links dos itens */
-.paginacao-item a:hover {
-    background-color: #e0e0ea;
-    color: #333;
-    transform: translateY(-2px);
-}
-
-/* Classe modificadora para o item ativo */
-.paginacao-item.ativo a {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-}
-
-.paginacao-item.ativo a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
-}
-
-/* Combinador de irmão adjacente: separador entre itens */
-.paginacao-item + .paginacao-item {
-    margin-left: 2px;
-}
-
-/* Combinador filho direto: primeiro e último (setas) com destaque */
-.paginacao-lista > .paginacao-item:first-child a,
-.paginacao-lista > .paginacao-item:last-child a {
+    display: block;
+    padding: 8px 14px;
     background-color: #fff;
-    border: 2px solid #e0e0ea;
-    color: #764ba2;
-    font-weight: bold;
-    font-size: 1.1rem;
+    color: #337ab7;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
 }
 
-.paginacao-lista > .paginacao-item:first-child a:hover,
-.paginacao-lista > .paginacao-item:last-child a:hover {
-    background-color: #764ba2;
-    color: #fff;
-    border-color: #764ba2;
+/* Combinador descendente: hover nos links */
+.paginacao-item a:hover {
+    background-color: #eee;
+    color: #23527c;
+}
+
+/* Classe modificadora para o item ativo (mesmo visual do hover) */
+.paginacao-item.ativo a {
+    background-color: #eee;
+    color: #23527c;
+}
+
+/* Combinador de irmão adjacente: remove borda duplicada entre itens */
+.paginacao-item + .paginacao-item a {
+    border-left: 0;
+}
+
+/* Combinador filho direto: cantos arredondados no primeiro e no último */
+.paginacao-lista > .paginacao-item:first-child a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.paginacao-lista > .paginacao-item:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
