@@ -2,55 +2,167 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Iguana - Verdinha</title>
+    <title>Verdinha - Minha Iguana</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            color: #2e3d2e;
+            line-height: 1.6;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);
+            color: #fff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .header .subtitle {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .hero {
+            width: 100%;
+            height: 320px;
+            background: url('https://images.unsplash.com/photo-1557060713-b3639a5e3127?w=1200') center/cover no-repeat;
+            border-bottom: 4px solid #2e7d32;
+        }
+
+        .content {
+            padding: 35px 40px;
+        }
+
+        .content h2 {
+            color: #2e7d32;
+            margin: 25px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #c8e6c9;
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .content ul,
+        .content ol {
+            margin: 10px 0 15px 25px;
+        }
+
+        .content li {
+            margin-bottom: 6px;
+        }
+
+        .content b {
+            color: #1b5e20;
+        }
+
+        .caixa-destaque {
+            background-color: #f1f8e9;
+            border-left: 5px solid #66bb6a;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            background-color: #f1f8e9;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #558b2f;
+            border-top: 1px solid #c8e6c9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Verdinha, minha iguana de estimação</h1>
+    <div class="container">
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Iguana_iguana_Portoviejo_01.jpg/800px-Iguana_iguana_Portoviejo_01.jpg" alt="Foto de uma iguana verde" width="400">
+        <header class="header">
+            <h1>🦎 Verdinha</h1>
+            <p class="subtitle">Minha iguana de estimação</p>
+        </header>
 
-    <h2>Sobre a Verdinha</h2>
-    <p>
-        A Verdinha é uma <b>iguana-verde</b> (<i>Iguana iguana</i>), um réptil originário
-        das florestas tropicais da América Central e do Sul. Ela tem 4 anos de idade
-        e mede cerca de 1,2 metros do focinho até a ponta da cauda.
-    </p>
+        <div class="hero"></div>
 
-    <h2>Características</h2>
-    <ul>
-        <li><b>Nome científico:</b> Iguana iguana</li>
-        <li><b>Classe:</b> Répteis</li>
-        <li><b>Expectativa de vida:</b> 15 a 20 anos</li>
-        <li><b>Tamanho adulto:</b> até 2 metros</li>
-        <li><b>Peso:</b> entre 4 e 8 kg</li>
-        <li><b>Alimentação:</b> herbívora</li>
-    </ul>
+        <main class="content">
 
-    <h2>Alimentação favorita da Verdinha</h2>
-    <ol>
-        <li>Folhas de couve</li>
-        <li>Rúcula</li>
-        <li>Manga</li>
-        <li>Mamão</li>
-        <li>Flores de hibisco</li>
-    </ol>
+            <h2>Sobre a Verdinha</h2>
+            <p>
+                A Verdinha é uma <b>iguana-verde</b> (<i>Iguana iguana</i>), um réptil originário
+                das florestas tropicais da América Central e do Sul. Ela tem 4 anos de idade
+                e mede cerca de 1,2 metros do focinho até a ponta da cauda.
+            </p>
 
-    <h2>Cuidados importantes</h2>
-    <p>
-        Iguanas precisam de um terrário amplo com <b>temperatura entre 28°C e 35°C</b>
-        e uma lâmpada UVB para sintetizar vitamina D3. A umidade deve ficar em torno
-        de 70%, e elas adoram tomar banhos mornos.
-    </p>
+            <h2>Características</h2>
+            <ul>
+                <li><b>Nome científico:</b> Iguana iguana</li>
+                <li><b>Classe:</b> Répteis</li>
+                <li><b>Expectativa de vida:</b> 15 a 20 anos</li>
+                <li><b>Tamanho adulto:</b> até 2 metros</li>
+                <li><b>Peso:</b> entre 4 e 8 kg</li>
+                <li><b>Alimentação:</b> herbívora</li>
+            </ul>
 
-    <h2>Curiosidades</h2>
-    <p>
-        Apesar de parecerem lentas, as iguanas são excelentes nadadoras e escaladoras.
-        Quando se sentem ameaçadas, podem usar a cauda como chicote para se defender.
-        Elas também têm um "terceiro olho" no topo da cabeça chamado <i>olho parietal</i>,
-        que detecta variações de luz e ajuda na regulação do ciclo circadiano.
-    </p>
+            <h2>Alimentação favorita</h2>
+            <ol>
+                <li>Folhas de couve</li>
+                <li>Rúcula</li>
+                <li>Manga</li>
+                <li>Mamão</li>
+                <li>Flores de hibisco</li>
+            </ol>
 
-    <hr>
-    <p><small>Página criada como atividade da UNIVALI - 2026</small></p>
+            <h2>Cuidados importantes</h2>
+            <div class="caixa-destaque">
+                <p>
+                    Iguanas precisam de um terrário amplo com <b>temperatura entre 28°C e 35°C</b>
+                    e uma lâmpada UVB para sintetizar vitamina D3. A umidade deve ficar em torno
+                    de 70%, e elas adoram tomar banhos mornos.
+                </p>
+            </div>
+
+            <h2>Curiosidades</h2>
+            <p>
+                Apesar de parecerem lentas, as iguanas são excelentes nadadoras e escaladoras.
+                Quando se sentem ameaçadas, podem usar a cauda como chicote para se defender.
+                Elas também têm um "terceiro olho" no topo da cabeça chamado <i>olho parietal</i>,
+                que detecta variações de luz e ajuda na regulação do ciclo circadiano.
+            </p>
+
+        </main>
+
+        <footer class="footer">
+            Página criada como atividade da UNIVALI · 2026
+        </footer>
+
+    </div>
 </body>
 </html>
